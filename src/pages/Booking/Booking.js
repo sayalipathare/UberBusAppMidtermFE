@@ -92,7 +92,7 @@ const Compose = () => {
         },
         body: JSON.stringify(paramdict),
       };
-      const response = await fetch("http://54.157.219.30/:5000/book", config);
+      const response = await fetch("http://54.157.219.30:5000/book", config);
       //const json = await response.json()
       if (response.ok) {
         //return json
