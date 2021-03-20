@@ -1,0 +1,11 @@
+import { CompareOperator } from './CompareOperator';
+import { ColumnModel } from './ColumnModel';
+export declare const NumericOperators: CompareOperator[];
+export declare const StringOperators: CompareOperator[];
+export declare const BooleanOperators: CompareOperator[];
+export declare const getOperators: (column: ColumnModel) => CompareOperator[];
+export declare const sortColumnArray: (columnName: string, columns: ColumnModel[], multiSort: boolean) => ColumnModel[];
+export declare const columnHasFilter: (column: ColumnModel) => boolean;
+export declare const createColumn: (name: string, options?: Partial<ColumnModel>) => ColumnModel;
+export declare const isDateColum: (column: ColumnModel) => boolean;
+export declare const parseDateColumnValue: (column: ColumnModel, value: string) => string;

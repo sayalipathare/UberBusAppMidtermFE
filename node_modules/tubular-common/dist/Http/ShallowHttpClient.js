@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ShallowHttpClient = void 0;
+var ShallowHttpClient = /** @class */ (function () {
+    function ShallowHttpClient(url, handler) {
+        this.request = url;
+        this.handler = handler;
+    }
+    ShallowHttpClient.prototype.fetch = function (gridRequest) {
+        return this.handler(this.request, gridRequest);
+    };
+    return ShallowHttpClient;
+}());
+exports.ShallowHttpClient = ShallowHttpClient;
