@@ -34,7 +34,7 @@ const THome = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://34.194.238.35:5000/bookings-results");
+      const res = await fetch("http://54.157.219.30:5000/bookings-results");
       const { results } = await res.json();
       console.log(results);
       setTweets([...results]);
